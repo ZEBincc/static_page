@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<!--登录界面-->
+<div class="container content">
+    <div class="form row">
+        <!--标题-->
+        <div class="form-horizontal">
+            <p class="login_title">登录--界面</p>
+        </div>
+
+        <!--用户名输入框-->
+        <div class="col-md-offset-2 col-md-8" id="user">
+            <div class="input-group">
+            <span class="input-group-addon">
+                <i class="fa fa-user fa-lg"></i>
+            </span>
+                <input type="text" required="required" class="form-control" placeholder="用户名">
+            </div>
+        </div>
+
+        <!--密码输入框-->
+        <div class="col-md-offset-2 col-md-8" id="pwd">
+            <div class="input-group">
+            <span class="input-group-addon">
+                <i class="fa fa-lock fa-lg"></i>
+            </span>
+                <input type="password" required="required" minlength="6" class="form-control" placeholder="密码(不得小于6位)">
+            </div>
+        </div>
+
+        <div class="col-md-offset-2 col-md-8" id="login-verification">
+            <div class="input-group">
+            <span class="input-group-addon">
+                <i class="fa fa-keyboard-o fa-lg"></i>
+            </span>
+                <input type="text" required="required" class="form-control" placeholder="请输入验证码">
+            <span class="input-group-addon">
+                <img width="50" src="" alt="">
+            </span>
+            </div>
+        </div>
+
+        <!--提交栏-->
+        <div class="col-md-offset-1 col-md-6">
+            <label class="checkbox">
+                <input type="checkbox" value="1">
+                记住我
+            </label>
+        </div>
+        <!--按钮-->
+        <div class="col-md-offset-2 col-md-8" id="login_sub">
+            <input type="submit" class="btn btn-success pull-right btn-block" value="提交">
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>
+
